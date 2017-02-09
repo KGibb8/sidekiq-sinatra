@@ -6,3 +6,7 @@ task :s do
   # Starts server
   ruby 'config.ru'
 end
+
+task :sidekiq do
+  system 'bundle exec sidekiq -r ./app.rb'
+end
