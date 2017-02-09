@@ -6,7 +6,6 @@ class MovieQueryWorker
     puts "Searching for #{title}"
     @query = "http://www.omdbapi.com/?t=#{title}&y=&plot=short&r=json"
     movie = sort_movie_params(get_movie_from_omdb)
-    puts movie
     Movie.create(movie)
   end
 
