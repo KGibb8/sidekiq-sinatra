@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'rack', '<2.0'
+gem 'sinatra'
+gem 'sinatra-contrib'
+gem 'standalone_migrations'
+gem 'pg'
+gem 'sidekiq'
+gem 'redis'
+gem 'pry-byebug'
+gem 'haml'

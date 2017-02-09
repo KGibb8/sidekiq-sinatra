@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  database: sidekiq_sinatra_development
+
+test:
+  adapter: postgresql
+  database: sidekiq_sinatra_test
