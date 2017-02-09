@@ -1,3 +1,3 @@
 require './app'
 
-Application.run! port: 1234
+Application.run!
