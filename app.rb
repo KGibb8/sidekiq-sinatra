@@ -21,8 +21,14 @@ class Application < Sinatra::Base
     haml :index
   end
 
+  get '/movies' do
+    @movies = Movie.all.order(:title)
+    haml :movies
+  end
+
   post "/" do
     MovieQueryWorker.perform_async(params[:title])
+    redirect to('/')
   end
 
 end

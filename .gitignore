@@ -3,3 +3,6 @@
 *.swn
 *.swo
 *.swm
+
+# Ignore redis/sidekiq dump file
+dump.rdb
