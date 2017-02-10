@@ -4,8 +4,10 @@ require 'sinatra/reloader'
 require 'redis'
 require './config/sidekiq'
 require 'net/http'
+
 require 'action_view'
 require 'haml'
+
 require 'pry'
 
 Dir[File.expand_path("./lib/workers/*.rb")].each { |file| require file }

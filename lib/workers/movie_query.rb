@@ -21,7 +21,7 @@ class MovieQueryWorker
   end
 
   def permitted_params
-    %w(title year rated released runtime)
+    %w(title year rated released runtime poster)
   end
 
 end

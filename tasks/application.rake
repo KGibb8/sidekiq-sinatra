@@ -17,10 +17,6 @@ end
 
 desc 'Custom console for Sinatra application'
 task :console do
-  Kernel.exec 'bundle exec pry -r ./app.rb'
-  trap('SIGINT') do
-    puts "Exiting Sinatra/Pry console"
-    exit 130
-  end
+  Kernel.exec "bundle exec bin/console"
 end
 task :c => :console
